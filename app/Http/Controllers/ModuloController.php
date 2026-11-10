@@ -34,10 +34,7 @@ class ModuloController extends Controller
 
     public function create()
     {
-        $url = env('URL_SERVER_API');
-        $profesores = Http::get($url .'/profesores')->json();
-
-        return view('modulo.create',compact('profesores'));
+        return view('modulo.create');
     }
 
     public function store(Request $request)
@@ -51,10 +48,9 @@ class ModuloController extends Controller
     public function edit($id)
     {
         $url = env('URL_SERVER_API');
-        $profesores = Http::get($url .'/profesores')->json();
         $modulo = $this->fetchDataFromApi($url . '/modulos/' . $id);
 
-        return view('modulo.edit', compact('modulo','profesores'));
+        return view('modulo.edit', compact('modulo'));
     }
 
     public function update(Request $request, $id)

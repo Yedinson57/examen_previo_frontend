@@ -41,17 +41,6 @@
                                     required>
                             </div>
 
-                            <div class="mb-4">
-                                <label for="profesor_id" class="form-label text-muted small fw-bold text-uppercase tracking-wider">Profesor asociado</label>
-                                <select name="profesor_id" id="profesor_id" class="form-select form-select-lg bg-light border-0 rounded-3 text-dark fw-medium" required>
-                                    @foreach($profesores as $profesor)
-                                    <option value="{{ $profesor['id'] }}" {{ old('profesor_id', $modulo['profesor_id']) == $profesor['id'] ? 'selected' : '' }}>
-                                        {{ $profesor['nombre'] }}
-                                    </option>
-                                    @endforeach
-                                </select>
-                            </div>
-
                             <hr class="my-4 opacity-25">
 
                             <div class="d-flex justify-content-center align-items-center gap-2 mt-4">

@@ -25,7 +25,6 @@
                                 <th class="ps-4 py-3" style="width: 15%">ID</th>
                                 <th class="py-3" style="width: 30%">Código del módulo</th>
                                 <th class="py-3" style="width: 25%">Nombre</th>
-                                <th class="py-3" style="width: 25%">Profesor asociado</th>
                                 <th class="text-center py-3" style="width: 30%">Acciones de Gestión</th>
                             </tr>
                         </thead>
@@ -36,7 +35,6 @@
                                 <td class="ps-4 fw-bold text-secondary">#{{ $modulo['id'] }}</td>
                                 <td class="fw-bold text-dark">{{ $modulo['codigo'] }}</td>
                                 <td class="fw-bold text-dark">{{ $modulo['nombre'] }}</td>
-                                <td class="fw-bold text-dark">{{ $modulo['profesor_id'] }}</td>
 
                                 <td class="text-center">
                                     <div class="d-flex justify-content-center align-items-center gap-2">

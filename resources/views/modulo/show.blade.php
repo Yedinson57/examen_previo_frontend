@@ -36,14 +36,7 @@
                                 {{ $modulos['nombre'] }}
                             </div>
                         </div>
-
-                        <div class="mb-4">
-                            <span class="text-muted small d-block mb-1 fw-bold text-uppercase tracking-wider">Profesor Asociado</span>
-                            <div class="p-3 bg-light rounded-3 fw-medium text-dark">
-                                {{ $modulos['profesor_id'] }}
-                            </div>
-                        </div>
-
+                        
                         <hr class="my-4 opacity-25">
 
                         <div class="row g-3 mb-4">

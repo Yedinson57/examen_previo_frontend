@@ -38,16 +38,6 @@
                                 <label for="nombre" class="text-secondary">Nombre del Módulo</label>
                             </div>
 
-                            <div class="form-floating mb-4">
-                                <select name="profesor_id" id="modulo_profesor_id" class="form-select" required>
-                                    <option value="" selected disabled>Seleccione un Profesor...</option>
-                                    @foreach ($profesores as $profesor)
-                                        <option value="{{ $profesor['id'] }}">{{ $profesor['nombre'] }}</option>
-                                    @endforeach
-                                </select>
-                                <label for="modulo_profesor_id" class="text-secondary">Profesor Asociado</label>
-                            </div>
-
                             <div class="d-flex justify-content-between align-items-center mt-5">
                                 <a href="/" class="btn btn-outline-secondary px-4 py-2 fw-medium rounded-3">
                                     Cancelar

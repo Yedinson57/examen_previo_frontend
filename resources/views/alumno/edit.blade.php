@@ -67,7 +67,7 @@
                                 <label for="modulo_id" class="form-label text-muted small fw-bold text-uppercase tracking-wider">modulo asociado</label>
                                 <select name="modulo_id" id="modulo_id" class="form-select form-select-lg bg-light border-0 rounded-3 text-dark fw-medium" required>
                                     @foreach($modulos as $modulo)
-                                    <option value="{{ $modulo['id'] }}" {{ old('modulo_id', $alumno['modulo_id']) == $alumno['id'] ? 'selected' : '' }}>
+                                    <option value="{{ $modulo['id'] }}" {{ old('modulo_id', $alumno['modulo_id']) == $modulo['id'] ? 'selected' : '' }}>
                                         {{ $modulo['nombre'] }}
                                     </option>
                                     @endforeach
